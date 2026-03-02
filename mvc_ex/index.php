@@ -10,21 +10,33 @@ switch ($route) {
         $usuarioController->telacadastro();
         break;
 
+    case "usuario/salvar":
+        $usuarioController->cadastrar();
+        break;
 
-case "usuario/salvar":
-    $usuarioController->cadastrar();
-    break;
+    case "usuario/Listar":
+        $usuarioController->usuariolistar();
+        break;
 
-case "usuario/Listar":
-    $usuarioController->Listar();
-    break;
+    case "usuario/telaEditar":
+        $usuarioController->telaEditar();
+        break;
+    
+    case "usuario/atualizar";
+        $usuarioController->atualizar();
+        break;
+
+
+    case "usuario/excluir":
+        $usuarioController->excluir();
+        break;
 
 
     default:
         echo "Pagina não encontrada";
         break;
 
-
+    
 }
 
 ?>

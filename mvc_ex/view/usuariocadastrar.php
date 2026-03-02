@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="C:\xampp\htdocs\red-lamp\mvc_ex"> ir para tela de lista</a>
+    <a href="/red-lamp/mvc_ex/usuario/Listar"> ir para tela de lista</a>
     <form method="POST" action="salvar">
         <input type="text" name="nome" placeholder="seu nome" require>
         <input type="text" name="email" placeholder="seu email" require>

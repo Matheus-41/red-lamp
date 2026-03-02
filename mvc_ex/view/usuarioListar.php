@@ -8,25 +8,27 @@
  </head>
  <body>
     <h2>Usuarios</h2>
-    <a href="C:\xampp\htdocs\red-lamp\mvc_ex\usuario\cadastrar"></a>
-    <table border = "1">
-    <tr>
-        <tr>Nome</tr>
-        <tr>Email</tr>
-        <tr>Ações</tr>
-    </tr>
-    <?php foreach($usuarios as $u): ?>
+    <a href="\red-lamp\mvc_ex\usuario\telaCadastro">tela cadastro</a>
+  <h2>Usuários</h2>
+    <table border ="1">
         <tr>
-        <td><?= $u['nome']?></td>
-        <td><?= $u['email']?></td>
-        <td>proxima aula</td>
-    </tr>
-    <?php endforeach; ?>
-     <table> 
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
+        <?php foreach ($usuarios as $id => $u): ?>
+            <tr>
+                <td><?=$u['nome']?></td>
+                <td><?=$u['email']?></td>
+                <td>
+                    <a href="/red-lamp/mvc_ex/usuario/telaEditar?id=<?= $id ?>">
+                        Editar
+                    </a>   
+                </td>
+                <a href="/red-lamp/mvc_ex/usuario/usuarioexcluir?id=<?= $id ?>">
+            </tr>
+            <?php endforeach; ?>
+    </table>
+</body>
+</html>
 
-
-
- </body>
- </html>
-
- 
